@@ -31,7 +31,7 @@
                             <div class="banner_title">
                                 <h2>titolo</h2>
                                 <h3>autore</h3>
-                                <h4>anno</h4>
+                                <h4>annoh</h4>
                             </div>
                         </div>
                     </div>
