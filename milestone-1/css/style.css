@@ -1,0 +1,60 @@
+
+/* $brand-primary-color:#2e3a46; */
+/* $brand-text-color:#7b7e7f; */
+/* $brand-main-color:#1e2d3b; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+header{
+    width: 100%;
+    padding: 14px 20px;
+    background-color:#2e3a46;
+
+}
+    .logo{
+        width: 45px;
+        height:45px;
+        border-radius: 50%;
+        overflow: hidden;
+          
+    }
+
+    /* MAIN */
+    .main-app{
+        background-color:#1e2d3b;
+        padding: 40px; 
+      }
+
+      .single_card{
+    
+        margin:12px;
+        min-height: 400px;
+        
+        background-color: #2e3a46;
+      }
+
+      .my_banner{
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .banner_title{
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .banner_title h2{
+        margin-bottom: 20px;
+    }
+    .banner_title h3{
+        margin: unset;
+    }
