@@ -1,3 +1,8 @@
+
+<?php 
+    require_once __DIR__ . '/database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,22 +26,24 @@
     <div class="main-app">
         <div class="container">
             <div class="row row-cols-5">
-                <div class="main-card">
-            
-                    <!-- SINGLE CARD -->
-                    <div class="single_card">
-                        <div class="my_banner">
-                            <img src="" alt="">
 
-                            <div class="banner_title">
-                                <h2>titolo</h2>
-                                <h3>autore</h3>
-                                <h4>annoh</h4>
+                <?php foreach($database as $album) {?>
+                    <div class="main-card">
+                        <!-- SINGLE CARD -->
+                        <div class="single_card">
+                            <div class="my_banner">
+                                <img src="<?php echo $album['poster']; ?>" alt=" <?php echo $album['title']?>">
+
+                                <div class="banner_title">
+                                    <h2> <?php echo $album['title']; ?> </h2>
+                                    <h3> <?php echo $album['author']; ?> </h3>
+                                    <h4> <?php echo $album['year']; ?> </h4>
+                                </div>
                             </div>
                         </div>
+                        <!-- SINGLE CARD -->
                     </div>
-                    <!-- SINGLE CARD -->
-                </div>
+                <?php } ?>
             </div>
         </div>
     </div>
