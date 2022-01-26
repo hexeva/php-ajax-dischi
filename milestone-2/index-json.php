@@ -1,7 +1,5 @@
 
-<?php 
-    require_once __DIR__ . '/database.php';
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,40 +16,38 @@
     <title>PHP DISC</title>
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-       <div class="logo">
-           <img src="img/logo.png" alt="logo spotify">
-       </div>
-   </header>
-    <!-- HEADER -->
+    <div id="root">
+        <!-- HEADER -->
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo spotify">
+            </div>
+        </header>
+        <!-- HEADER -->
 
-    <!-- MAIN -->
-    <div class="main-app">
-        <div class="container">
-            <div class="row row-cols-5">
-
-                <?php foreach($database as $album) {?>
-                    <div class="main-card">
-                        <!-- SINGLE CARD -->
+        <!-- MAIN -->
+        <div class="main-app">
+            <div class="container">
+                <div class="row row-cols-5">
+                    <div v-for="(disc,index) in albums":key="index" class="main-card">
+                            <!-- SINGLE CARD -->
                         <div class="single_card">
                             <div class="my_banner">
-                                <img src="<?php echo $album['poster']; ?>" alt=" <?php echo $album['title']?>">
-
+                                <img :src="disc.poster" :alt="disc.title">
                                 <div class="banner_title">
-                                    <h2> <?php echo $album['title']; ?> </h2>
-                                    <h3> <?php echo $album['author']; ?> </h3>
-                                    <h4> <?php echo $album['year']; ?> </h4>
+                                    <h2> {{disc.title}} </h2>
+                                    <h3> {{disc.author}} </h3>
+                                    <h4> {{disc.year}} </h4>
                                 </div>
                             </div>
                         </div>
                         <!-- SINGLE CARD -->
                     </div>
-                <?php } ?>
+                </div>
             </div>
         </div>
     </div>
-    <!-- MAIN -->
+    
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
