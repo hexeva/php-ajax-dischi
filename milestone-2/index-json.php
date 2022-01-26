@@ -26,10 +26,10 @@
         <!-- HEADER -->
 
         <!-- MAIN -->
-        <div class="main-app">
+        <div class="main_app">
             <div class="container">
                 <div class="row row-cols-5">
-                    <div v-for="(disc,index) in albums":key="index" class="main-card">
+                    <div v-for="(disc,index) in albums":key="index" class="main_card">
                             <!-- SINGLE CARD -->
                         <div class="single_card">
                             <div class="my_banner">

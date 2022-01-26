@@ -23,12 +23,12 @@
     <!-- HEADER -->
 
     <!-- MAIN -->
-    <div class="main-app">
+    <div class="main_app">
         <div class="container">
             <div class="row row-cols-5">
 
                 <?php foreach($database as $album) {?>
-                    <div class="main-card">
+                    <div class="main_card">
                         <!-- SINGLE CARD -->
                         <div class="single_card">
                             <div class="my_banner">
